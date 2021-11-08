@@ -59,3 +59,10 @@ Die Teilnehmer:innen haben nach Bearbeitung der Aufgabe ein vertieftes Verständ
 - Die initiale Durchführung des Testskripts mit `$ sh test.sh` zeigt, dass die Dateien im `examples/valid`-Ordner die Tests bestehen und die Dateien im `examples/invalid`-Ordner nicht. Das ist nicht verwunderlich, weil das Schema leer ist und somit keine Vorgaben macht, wie eine Datei falsch sein kann.
 - Eine Vorgehensweise könnte sein, Schritt für Schritt die invaliden Dateien durchzugehen und das Schema jeweils so zu erweitern, dass sie als nicht-Schema-konform erkannt werden. Dafür muss die jeweilige Abweichung der invaliden Datei von den validen Dateien erkannt werden.
 - Hinweis: Jede invalide Datei weicht nur in einer Eigenschaft von einer validen Datei ab.
+
+## Abgabe
+
+Es gibt zwei Möglichkeiten der Abgabe:
+
+1. Anlegen eines Kontos bei [codeberg.org](https://codeberg.org), [gitlab.com](https://gitlab.com/) oder [github.com](https://gitlab.com/) und [`git push`](https://librarycarpentry.org/lc-git/03-sharing/index.html) des bearbeiteten Repos dorthin. Abgegeben werden muss dann nur der Link zum Repo.
+2. Packen des `malis21-aufgabe1.1`-Ordners in ein zip-Archiv und Hochladen auf die Moodle-Plattform.
