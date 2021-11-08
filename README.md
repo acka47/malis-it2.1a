@@ -1,6 +1,27 @@
 # Aufgabe 1.1 im Modul IT2 des MALIS21
 
-## Voraussetzungen
+## Aufgabe
+
+- Nach Vorgabe von validen (Ordner `examples/valid`) und nicht-validen (Ordner `examples/invalid`) Beispieldokumenten sowie eines Testskripts (`test.sh`), soll ein JSON-Schema erstellt werden.
+- Die Dateien im `examples`-Ordner dürfen dabei **nicht** verändert werden, lediglich die Schema-Dateien im `schemas`-Ordner.
+- Ergebnis: Ein JSON-Schema, dass die Dokumente entsprechend den Vorgaben (valide oder nicht-valide) validiert.
+
+## Bewertungskriterien
+
+Die Aufgabe ist bestanden, wenn das Testskript keine Fehler auswirft und die Beispieldateien im `examples`-Ordner sowie das Testskript selbst nicht verändert wurden.
+
+## Lernziele
+
+Die Teilnehmer:innen haben nach Bearbeitung der Aufgabe ein vertieftes Verständnis von JSON und JSON Schema.
+
+## Abgabe
+
+Es gibt zwei Möglichkeiten der Abgabe:
+
+1. Anlegen eines Kontos bei [codeberg.org](https://codeberg.org), [gitlab.com](https://gitlab.com/) oder [github.com](https://gitlab.com/) und [`git push`](https://librarycarpentry.org/lc-git/03-sharing/index.html) des bearbeiteten Repos dorthin. Abgegeben werden muss dann nur der Link zum Repo.
+2. Packen des `malis21-aufgabe1.1`-Ordners in ein zip-Archiv und Hochladen auf die Moodle-Plattform.
+
+## Technische Voraussetzungen
 
 ### bash
 
@@ -39,30 +60,9 @@ Die Änderungen an den einzelnen Schema-Dateien werden mit git commits getrackt,
 
 Siehe für eine git-Einführung auch [https://librarycarpentry.org/lc-git/01-what-is-git/index.html](https://librarycarpentry.org/lc-git/01-what-is-git/index.html).
 
-## Aufgabe
-
-- Nach Vorgabe von validen (Ordner `examples/valid`) und nicht-validen (Ordner `examples/invalid`) Beispieldokumenten sowie eines Testskripts (`test.sh`), soll ein JSON-Schema erstellt werden.
-- Die Dateien im `examples`-Ordner dürfen dabei **nicht** verändert werden, lediglich die Schema-Dateien im `schemas`-Ordner.
-- Ergebnis: Ein JSON-Schema, dass die Dokumente entsprechend den Vorgaben (valide oder nicht-valide) validiert.
-
-## Bewertungskriterien
-
-Die Aufgabe ist bestanden, wenn das Testskript keine Fehler auswirft und die Beispieldateien im `examples`-Ordner sowie das Testskript selbst nicht verändert wurden.
-
-## Lernziele
-
-Die Teilnehmer:innen haben nach Bearbeitung der Aufgabe ein vertieftes Verständnis von JSON und JSON Schema.
-
 ## Tipps für die Durchführung
 
 - Das Grundgerüst ist bereits vorgegeben: das Basisschema (`schemas/schema.json`) referenziert einzelne Schemas für jedes Feld. Dadurch wird die Struktur übersichtlicher, als wenn alles in einer Datei steht (was auch möglich ist).
 - Die initiale Durchführung des Testskripts mit `$ sh test.sh` zeigt, dass die Dateien im `examples/valid`-Ordner die Tests bestehen und die Dateien im `examples/invalid`-Ordner nicht. Das ist nicht verwunderlich, weil das Schema leer ist und somit keine Vorgaben macht, wie eine Datei falsch sein kann.
 - Eine Vorgehensweise könnte sein, Schritt für Schritt die invaliden Dateien durchzugehen und das Schema jeweils so zu erweitern, dass sie als nicht-Schema-konform erkannt werden. Dafür muss die jeweilige Abweichung der invaliden Datei von den validen Dateien erkannt werden.
 - Hinweis: Jede invalide Datei weicht nur in einer Eigenschaft von einer validen Datei ab.
-
-## Abgabe
-
-Es gibt zwei Möglichkeiten der Abgabe:
-
-1. Anlegen eines Kontos bei [codeberg.org](https://codeberg.org), [gitlab.com](https://gitlab.com/) oder [github.com](https://gitlab.com/) und [`git push`](https://librarycarpentry.org/lc-git/03-sharing/index.html) des bearbeiteten Repos dorthin. Abgegeben werden muss dann nur der Link zum Repo.
-2. Packen des `malis21-aufgabe1.1`-Ordners in ein zip-Archiv und Hochladen auf die Moodle-Plattform.
