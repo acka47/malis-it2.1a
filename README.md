@@ -27,7 +27,7 @@ Es gibt zwei Möglichkeiten der Abgabe:
 
 Von optimal zu weniger optimal:
 
-1. Nutzung eines Linux-Systems (z.B. Linux Mint)
+1. Nutzung eines Linux-Systems (z.B. [Linux Mint Cinnamon Edition](https://linuxmint.com/edition.php?id=288))
 1. Nutzung der Shell auf MacOS
 1. Nutzung des Linux Subsystems für Windows
 
