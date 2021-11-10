@@ -15,12 +15,6 @@
       "label": "Mathematikerin"
     }
   ],
-  "placeOfBirth": [
-    {
-      "id": "https://d-nb.info/gnd/4074335-4",
-      "label": "London"
-    }
-  ],
   "gender": [
     {
       "id": "https://d-nb.info/standards/vocab/gnd/gender#female",

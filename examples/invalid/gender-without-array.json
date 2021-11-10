@@ -22,9 +22,6 @@
     "id": "https://d-nb.info/standards/vocab/gnd/gender#female",
     "label": "Weiblich"
   },
-  "dateOfBirth": [
-    "1956"
-  ],
   "geographicAreaCode": [
     {
       "id": "https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-SE",
