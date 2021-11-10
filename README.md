@@ -45,7 +45,9 @@ Website: https://ajv.js.org/
 
 <table><tr><td>🛈 Um ajv installieren zu können, müssen node und npm installiert sein. Siehe dazu https://docs.npmjs.com/cli/v7/configuring-npm/install.</td></tr></table>
 
-Die [ajv-cli-Installation](https://ajv.js.org/guide/getting-started.html#install) ist dann recht einfach mit dem folgenden Befehl umgesetzt: `npm install -g ajv-cli`
+Die [ajv-cli-Installation](https://ajv.js.org/guide/getting-started.html#install) (zusammen mit dem Paket `ajv-formats`, das ebenfalls benötigt wird) ist dann recht einfach mit dem folgenden Befehl umgesetzt: 
+
+`$ npm install -g ajv-cli ajv-formats`
 
 ### git (optional)
 
@@ -65,4 +67,4 @@ Siehe für eine git-Einführung auch [https://librarycarpentry.org/lc-git/01-wha
 - Das Grundgerüst ist bereits vorgegeben: das Basisschema (`schemas/schema.json`) referenziert einzelne Schemas für jedes Feld. Dadurch wird die Struktur übersichtlicher, als wenn alles in einer Datei steht (was auch möglich ist).
 - Die initiale Durchführung des Testskripts mit `$ sh test.sh` zeigt, dass die Dateien im `examples/valid`-Ordner die Tests bestehen und die Dateien im `examples/invalid`-Ordner nicht. Das ist nicht verwunderlich, weil das Schema leer ist und somit keine Vorgaben macht, wie eine Datei falsch sein kann.
 - Eine Vorgehensweise könnte sein, Schritt für Schritt die invaliden Dateien durchzugehen und das Schema jeweils so zu erweitern, dass sie als nicht-Schema-konform erkannt werden. Dafür muss die jeweilige Abweichung der invaliden Datei von den validen Dateien erkannt werden.
-- Hinweis: Jede invalide Datei weicht nur in einer Eigenschaft von einer validen Datei ab.
+- Hinweis: Jede invalide Datei weicht nur in einer Eigenschaft von einer validen Datei ab. Der Dateiname deutet auf die Abweichung hin.

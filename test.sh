@@ -4,8 +4,8 @@
 
 for version in "draft"; do
 	echo "Testing version: $version"
-	ajv test -s ./schemas/schema.json -r "./schemas/*.json" -d "examples/valid/*.json" --valid 2>&1
-	ajv test -s ./schemas/schema.json -r "./schemas/*.json" -d "examples/invalid/*.json" --invalid 2>&1
+	ajv test -s ./schemas/schema.json -r "./schemas/*.json" -d "examples/valid/*.json" -c ajv-formats --valid 2>&1
+	ajv test -s ./schemas/schema.json -r "./schemas/*.json" -d "examples/invalid/*.json" -c ajv-formats --invalid 2>&1
 done
 
 if [ $? -eq 0 ]
