@@ -1,6 +1,6 @@
 #!/bin/bash
 # Description: Tests generated JSON files against schemas
-# Prerequisites: install 'ajv':$  npm install -g ajv-cli
+# Prerequisites: install 'ajv-cli' and 'ajv-formats':$  npm install -g ajv-cli ajv-formats
 
 set -e
 
