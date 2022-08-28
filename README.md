@@ -19,7 +19,7 @@ Die Teilnehmer:innen haben nach Bearbeitung der Aufgabe ein vertieftes Verständ
 Es gibt zwei Möglichkeiten der Abgabe:
 
 1. Anlegen eines Kontos bei [codeberg.org](https://codeberg.org), [gitlab.com](https://gitlab.com/) oder [github.com](https://gitlab.com/) und [`git push`](https://librarycarpentry.org/lc-git/03-sharing/index.html) des bearbeiteten Repos dorthin. Abgegeben werden muss dann nur der Link zum Repo.
-2. Packen des `malis21-aufgabe1.1`-Ordners in ein zip-Archiv und Hochladen auf die Moodle-Plattform.
+2. Packen des `malis-it2-aufgabe1.1`-Ordners in ein zip-Archiv und Hochladen auf die Moodle-Plattform.
 
 ## Technische Voraussetzungen
 
@@ -53,7 +53,7 @@ Die [ajv-cli-Installation](https://ajv.js.org/guide/getting-started.html#install
 
 Idealerweise wird die Aufgabe mit git auf den lokalen Rechner geklont:
 
-`$ git clone https://codeberg.org/acka47/malis21-aufgabe1.1.git` bzw. via ssh `$ git clone git@codeberg.org:acka47/malis21-aufgabe1.1.git`
+`$ git clone https://codeberg.org/acka47/malis-it2-aufgabe1.1.git` bzw. via ssh `$ git clone git@codeberg.org:acka47/malis-it2-aufgabe1.1.git`
 
 Die Änderungen an den einzelnen Schema-Dateien werden mit git commits getrackt, z.B. nach Bearbeitung der `gender.json`-Datei:
 
