@@ -1,5 +1,5 @@
 {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org/docs/jsonldcontext.json",
   "id": "https://d-nb.info/gnd/124767095",
   "gndIdentifier": "124767095",
   "type": [
