@@ -43,7 +43,7 @@ ajv ist ein JSON Schema Validator für Node.js, der es ermöglicht, JSON anhand 
 
 Website: https://ajv.js.org/
 
-<table><tr><td>🛈 Um ajv installieren zu können, müssen node und npm installiert sein. Siehe dazu https://docs.npmjs.com/cli/v7/configuring-npm/install.</td></tr></table>
+<table><tr><td>ℹ️ Um ajv installieren zu können, müssen node und npm installiert sein. Siehe dazu https://docs.npmjs.com/cli/v8/configuring-npm/install.</td></tr></table>
 
 Die [ajv-cli-Installation](https://ajv.js.org/guide/getting-started.html#install) (zusammen mit dem Paket `ajv-formats`, das ebenfalls benötigt wird) ist dann recht einfach mit dem folgenden Befehl umgesetzt: 
 
