@@ -6,7 +6,6 @@
   ],
   "type": [
     "AuthorityResource",
-    "DifferentiatedPerson",
     "Person"
   ],
   "preferredName": "Chavarrías, Antonio",

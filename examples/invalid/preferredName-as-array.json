@@ -4,7 +4,6 @@
   "gndIdentifier": "123191580",
   "type": [
     "AuthorityResource",
-    "DifferentiatedPerson",
     "Person"
   ],
   "preferredName": [
