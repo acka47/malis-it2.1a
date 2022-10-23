@@ -1,4 +1,4 @@
-# Aufgabe 1.1 im Modul IT2 des MALIS21
+# Aufgabe 1.1 im Modul IT2 des MALIS
 
 ## Aufgabe
 
@@ -23,7 +23,7 @@ Es gibt zwei Möglichkeiten der Abgabe:
 
 ## Technische Voraussetzungen
 
-### bash
+### Shell
 
 Von optimal zu weniger optimal:
 
@@ -45,7 +45,7 @@ Website: https://ajv.js.org/
 
 <table><tr><td>ℹ️ Um ajv installieren zu können, müssen node und npm installiert sein. Siehe dazu https://docs.npmjs.com/cli/v8/configuring-npm/install.</td></tr></table>
 
-Die [ajv-cli-Installation](https://ajv.js.org/guide/getting-started.html#install) (zusammen mit dem Paket `ajv-formats`, das ebenfalls benötigt wird) ist dann recht einfach mit dem folgenden Befehl umgesetzt: 
+Die [ajv-cli-Installation](https://ajv.js.org/guide/getting-started.html#install) (zusammen mit dem Paket `ajv-formats`, das ebenfalls benötigt wird) ist dann recht einfach mit dem folgenden Befehl umgesetzt:
 
 `$ npm install -g ajv-cli ajv-formats`
 
@@ -64,7 +64,72 @@ Siehe für eine git-Einführung auch [https://librarycarpentry.org/lc-git/01-wha
 
 ## Tipps für die Durchführung
 
-- Das Grundgerüst ist bereits vorgegeben: das Basisschema (`schemas/schema.json`) referenziert einzelne Schemas für jedes Feld. Dadurch wird die Struktur übersichtlicher, als wenn alles in einer Datei steht (was auch möglich ist).
-- Die initiale Durchführung des Testskripts mit `$ sh test.sh` zeigt, dass die Dateien im `examples/valid`-Ordner die Tests bestehen und die Dateien im `examples/invalid`-Ordner nicht. Das ist nicht verwunderlich, weil das Schema leer ist und somit keine Vorgaben macht, wie eine Datei falsch sein kann.
-- Eine Vorgehensweise könnte sein, Schritt für Schritt die invaliden Dateien durchzugehen und das Schema jeweils so zu erweitern, dass sie als nicht-Schema-konform erkannt werden. Dafür muss die jeweilige Abweichung der invaliden Datei von den validen Dateien erkannt werden.
-- Hinweis: Jede invalide Datei weicht nur in einer Eigenschaft von einer validen Datei ab. Der Dateiname deutet auf die Abweichung hin.
+Nachdem der Ordner der Aufgabe (per git oder auf anderem Wege) auf ihrem lokalen Rechner liegt und ajv installiert ist, kann die Bearbeitung der Aufgabe beginnen.
+
+### Ausführen des Testskripts
+
+Um das Testskript ausführen zu können, wechseln Sie in der Shell in das Verzeichnis zu dieser Übung, das Sie sich idealerweise mit `git clone` (siehe oben) auf Ihren lokalen Rechner gezogen haben.
+
+`$ cd <pfad-zum-ordner>/malis-it2-aufgabe1.1`
+
+Die Testdatei `test.sh` liegt als ausführbares Bash-Skript in diesem Ordner und wird wie folgt ausgeführt:
+
+`$ sh ./test.sh`
+
+### Der Test-Output
+
+Wenn wir noch keine Änderungen an den Dateien im `schemas`-Ordner vorgenommen haben, sieht der Output wie folgt aus:
+
+```shell
+$ sh ./test.sh
+examples/valid/1078122261.json passed test
+examples/valid/119232022.json passed test
+examples/valid/123191580.json passed test
+examples/valid/124767095.json passed test
+examples/invalid/gender-without-array.json failed test
+examples/invalid/id-as-array.json failed test
+examples/invalid/missing-context.json failed test
+examples/invalid/missing-default-type.json failed test
+examples/invalid/missing-gndIdentifier.json failed test
+examples/invalid/missing-id.json failed test
+examples/invalid/missing-preferredName.json failed test
+examples/invalid/missingType.json failed test
+examples/invalid/non-binary-gender.json failed test
+examples/invalid/preferredName-as-array.json failed test
+examples/invalid/profession-without-array.json failed test
+examples/invalid/variant-name-without-array.json failed test
+examples/invalid/wrong-context.json failed test
+examples/invalid/wrong-geographic-are-code.json failed test
+examples/invalid/wrong-id.json failed test
+examples/invalid/wrong-profession-id.json failed test
+```
+
+Das Skript geht zunächst alle Dateien im `examples/valid`-Ordner durch und validiert diese gegen das Schema `schema.json`, das wiederum auf – aus >Gründen der Übersichtlichkeit in eigenen Dateien abgelegte – Unterschemas für jedes einzelne Feld verweist: in `id.json` wird definiert, wie das Feld `id` validiert werden soll, in `gndIdentifier.json`, das Feld `gndIdentifier` usw.
+
+Da in diesen Schema-Dateien bisher keinerlei Bedingungen definiert sind, wird jede valide JSON-Datei den Test bestehen. Dementsprechend bestehen auch alle vier Dateien im `examples/valid`-Ordner die Tests.
+
+Allerdings fallen alle Dateien im `examples/invalid`-Ordner anfangs durch den Test, weil dieser eben erwartet, dass die Dateien **nicht** Schema-konform sind.
+
+### Das Ziel
+
+Ziel ist es, die Schema-Dateien `context-schema.json`, `gender.json`, `geographicAreaCode.json`, `gndIdentifier.json`, `id.json`, `preferredName.json`, `professionOrOccupation.json`, `schema.json`, `type.json`, `variantName.json` so anzupassen, dass am Ende des `test.sh`-Outputs steht:
+
+`-e All tests PASSED`
+
+Eine sinnvolle Vorgehensweise ist:
+
+- Schritt für Schritt die invaliden Dateien durchzugehen und das Schema jeweils so zu erweitern, dass sie als nicht-Schema-konform erkannt werden. Dafür muss die jeweilige Abweichung der invaliden Datei von den validen Dateien erkannt werden.
+
+💡 Hinweis: Jede invalide Datei weicht nur in einer Eigenschaft von einer validen Datei ab. Der Dateiname deutet auf die Abweichung hin.
+
+Viel Erfolg!
+
+## Nützliche Online-Ressourcen
+
+* Die Folien aus der Präsenzveranstaltung (vorerst noch vom MALIS21):
+  * [Folien 13 bis 22 zu JSON](https://malis21.acka47.net/slides/2021-11-13.html#/13)
+  * [Folien 39 bis 50 zu JSON Schema](https://malis21.acka47.net/slides/2021-11-13.html#/39)
+* [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/), eine übersichtliche und durchsuchbare JSON-Schema-Referenz
+* Für manche Anpassungen muss eine *Regular Expression* geschrieben werden. Dafür gibt es auch hilfreiche Online-Tools, z.B.:
+  * [RegExr](https://regexr.com/)
+  * [RegEx101](https://regex101.com/)
