@@ -104,7 +104,7 @@ examples/invalid/wrong-id.json failed test
 examples/invalid/wrong-profession-id.json failed test
 ```
 
-Das Skript geht zunächst alle Dateien im `examples/valid`-Ordner durch und validiert diese gegen das Schema `schema.json`, das wiederum auf – aus >Gründen der Übersichtlichkeit in eigenen Dateien abgelegte – Unterschemas für jedes einzelne Feld verweist: in `id.json` wird definiert, wie das Feld `id` validiert werden soll, in `gndIdentifier.json`, das Feld `gndIdentifier` usw.
+Das Skript geht zunächst alle Dateien im `examples/valid`-Ordner durch und validiert diese gegen das Schema `schema.json`, das wiederum auf – aus Gründen der Übersichtlichkeit in eigenen Dateien abgelegte – Unterschemas für jedes einzelne Feld verweist: in `id.json` wird definiert, wie das Feld `id` validiert werden soll, in `gndIdentifier.json`, das Feld `gndIdentifier` usw.
 
 Da in diesen Schema-Dateien bisher keinerlei Bedingungen definiert sind, wird jede valide JSON-Datei den Test bestehen. Dementsprechend bestehen auch alle vier Dateien im `examples/valid`-Ordner die Tests.
 
@@ -133,3 +133,10 @@ Viel Erfolg!
 * Für manche Anpassungen muss eine *Regular Expression* geschrieben werden. Dafür gibt es auch hilfreiche Online-Tools, z.B.:
   * [RegExr](https://regexr.com/)
   * [RegEx101](https://regex101.com/)
+
+## Einladung zum Üben guter, einheitlicher git-commit-Nachrichten
+
+Ich empfehle, bei dieser Aufgabe mit git zu arbeiten und die Vergabe sinnvoller und einheitlicher Commit-Nachrichten zu üben. Zur Orientierung, siehe dazu z.B. die folgenden beiden Texte:
+
+* https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+* https://cbea.ms/git-commit/
