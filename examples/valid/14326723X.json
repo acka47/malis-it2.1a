@@ -1,0 +1,31 @@
+{
+    "professionOrOccupation": [
+          {
+                "id": "https://d-nb.info/gnd/4145258-6",
+                "label": "Bibliothekar"
+          }
+    ],
+    "gender": [
+          {
+                "id": "https://d-nb.info/standards/vocab/gnd/gender#male",
+                "label": "Männlich"
+          }
+    ],
+    "dateOfBirth": [
+          "1979"
+    ],
+    "type": [
+          "Person",
+          "AuthorityResource"
+    ],
+    "@context": "http://lobid.org/gnd/context.jsonld",
+    "geographicAreaCode": [
+          {
+                "id": "https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE",
+                "label": "Deutschland"
+          }
+    ],
+    "gndIdentifier": "14326723X",
+    "id": "https://d-nb.info/gnd/14326723X",
+    "preferredName": "Pohl, Adrian"
+}
