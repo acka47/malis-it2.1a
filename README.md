@@ -126,9 +126,9 @@ Viel Erfolg!
 
 ## Nützliche Online-Ressourcen
 
-* Die Folien aus der Präsenzveranstaltung (vorerst noch vom MALIS21):
-  * [Folien 13 bis 22 zu JSON](https://malis21.acka47.net/slides/2021-11-13.html#/13)
-  * [Folien 39 bis 50 zu JSON Schema](https://malis21.acka47.net/slides/2021-11-13.html#/39)
+* Die Folien aus der Präsenzveranstaltung (vorerst noch vom MALIS22):
+  * [Folien 13 bis 22 zu JSON](https://malis.acka47.net/it2/malis22/slides/2022-12-09.html#/13)
+  * [Folien 39 bis 50 zu JSON Schema](https://malis.acka47.net/it2/malis22/slides/2022-12-09.html#/39)
 * [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/), eine übersichtliche und durchsuchbare JSON-Schema-Referenz
 * Für manche Anpassungen muss eine *Regular Expression* geschrieben werden. Dafür gibt es auch hilfreiche Online-Tools, z.B.:
   * [RegExr](https://regexr.com/)
