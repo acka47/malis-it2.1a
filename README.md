@@ -18,7 +18,7 @@ Die Teilnehmer:innen haben nach Bearbeitung der Aufgabe ein vertieftes Verständ
 
 Es gibt zwei Möglichkeiten der Abgabe:
 
-1. Anlegen eines Kontos bei [codeberg.org](https://codeberg.org), [gitlab.com](https://gitlab.com/) oder [github.com](https://gitlab.com/) und [`git push`](https://librarycarpentry.org/lc-git/03-sharing/index.html) des bearbeiteten Repos dorthin. Abgegeben werden muss dann nur der Link zum Repo.
+1. Anlegen eines Kontos bei [codeberg.org](https://codeberg.org), [gitlab.com](https://gitlab.com/), [github.com](https://gitlab.com/) oder eines anderen öffentlich zugänglichen git-Hosters und [`git push`](https://librarycarpentry.org/lc-git/03-sharing/index.html) des bearbeiteten Repos dorthin. Abgegeben werden muss dann nur der Link zum Repo.
 2. Packen des `malis-it2.1a`-Ordners in ein zip-Archiv und Hochladen auf die Moodle-Plattform.
 
 ## Technische Voraussetzungen
