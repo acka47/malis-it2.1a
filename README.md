@@ -120,7 +120,9 @@ Eine sinnvolle Vorgehensweise ist:
 
 - Schritt für Schritt die invaliden Dateien durchzugehen und das Schema jeweils so zu erweitern, dass sie als nicht-Schema-konform erkannt werden. Dafür muss die jeweilige Abweichung der invaliden Datei von den validen Dateien erkannt werden.
 
-💡 Hinweis: Jede invalide Datei weicht nur in einer Eigenschaft von einer validen Datei ab. Der Dateiname deutet auf die Abweichung hin.
+
+> 💡 **_Hinweis:_** Jede invalide Datei weicht nur in einer Eigenschaft von einer validen Datei ab. Der Dateiname deutet auf die Abweichung hin.
+
 
 Viel Erfolg!
 
