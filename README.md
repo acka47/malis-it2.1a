@@ -1,4 +1,6 @@
-# Aufgabe IT2.1a im MALIS an der TH Köln
+# Erstellung eines JSON-Schemas zur Validierung vorgegebener Beispieldaten
+
+## Aufgabe IT2.1a im MALIS an der TH Köln
 
 ## Aufgabe
 
