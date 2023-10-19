@@ -2,6 +2,8 @@
 
 ## Aufgabe IT2.1a im MALIS an der TH Köln
 
+![Screenshot des geöffneten git-Projekts in VS Code mit zwei Schema-Dateien geöffnet in Tabs](/img/preview.png)
+
 ## Aufgabe
 
 - Nach Vorgabe von validen (Ordner `examples/valid`) und nicht-validen (Ordner `examples/invalid`) Beispieldokumenten sowie eines Testskripts (`test.sh`), soll ein JSON-Schema erstellt werden.
