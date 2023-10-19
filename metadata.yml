@@ -1,0 +1,40 @@
+creativeWorkStatus: Published
+name: Erstellung eines JSON-Schemas zur Validierung vorgegebener Beispieldaten
+description: >-
+  * Nach Vorgabe von validen (Ordner examples/valid) und nicht-validen (Ordner
+  examples/invalid) Beispieldokumenten sowie eines Testskripts (test.sh), soll
+  ein JSON-Schema erstellt werden.
+
+  * Die Dateien im examples-Ordner dürfen dabei nicht verändert werden,
+  lediglich die Schema-Dateien im schemas-Ordner.
+
+  * Ergebnis: Ein JSON-Schema, dass die Dokumente entsprechend den Vorgaben
+  (valide oder nicht-valide) validiert.
+license:
+  id: https://creativecommons.org/publicdomain/zero/1.0/deed.de
+id: https://codeberg.org/acka47/malis-it2.1a
+creator:
+  - givenName: Adrian
+    familyName: Pohl
+    id: https://orcid.org/0000-0001-9083-7442
+    type: Person
+    affiliation:
+      name: hbz – Hochschulbibliothekszentrum des Landes NRW
+      type: Organization
+keywords:
+  - malis
+  - json
+  - json-schema
+  - validierung
+  - validation
+inLanguage:
+  - de
+about:
+  - https://w3id.org/kim/hochschulfaechersystematik/n022
+image: https://codeberg.org/acka47/malis-it2.1a/media/branch/main/img/preview.png
+learningResourceType:
+  - https://w3id.org/kim/hcrt/application
+  - https://w3id.org/kim/hcrt/drill_and_practice
+educationalLevel:
+  - https://w3id.org/kim/educationalLevel/level_A
+datePublished: '2021-11-08'
