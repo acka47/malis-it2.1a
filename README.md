@@ -86,6 +86,7 @@ examples/valid/1078122261.json passed test
 examples/valid/119232022.json passed test
 examples/valid/123191580.json passed test
 examples/valid/124767095.json passed test
+examples/valid/14326723X.json passed test
 examples/invalid/gender-without-array.json failed test
 examples/invalid/id-as-array.json failed test
 examples/invalid/missing-context.json failed test
