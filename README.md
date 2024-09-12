@@ -22,8 +22,14 @@ Die Teilnehmer:innen haben nach Bearbeitung der Aufgabe ein vertieftes Verständ
 
 Es gibt zwei Möglichkeiten der Abgabe:
 
-1. Anlegen eines Kontos bei [codeberg.org](https://codeberg.org), [gitlab.com](https://gitlab.com/), [github.com](https://gitlab.com/) oder eines anderen öffentlich zugänglichen git-Hosters und [`git push`](https://librarycarpentry.org/lc-git/03-sharing/index.html) des bearbeiteten Repos dorthin. Abgegeben werden muss dann nur der Link zum Repo.
-2. Packen des `malis-it2.1a`-Ordners in ein zip-Archiv und Hochladen auf die Moodle-Plattform.
+1. Anlegen eines Kontos bei [codeberg.org](https://codeberg.org), [gitlab.com](https://gitlab.com/) oder [github.com](https://gitlab.com/).
+  1. Forken dieses git-Repositories, d.h. Kopieren in die eigene Repo-Liste auf der jeweiligen Plattform: [Codeberg](https://codeberg.org/acka47/malis-it2.1a/fork), [GitLab.com](https://gitlab.com/acka47/malis-it2.1a/-/forks/new), [Github](https://github.com/acka47/malis-it2.1a/fork).
+  2. [git lokal einrichten](https://librarycarpentry.org/lc-git/02-getting-started.html)
+  3. `git clone` des geforkten Repos auf den lokalen Rechner.  oder direkt im geforkten git-Repo.
+  4. Aufgabe lokal bearbeiten
+  5. [`git push`](https://librarycarpentry.org/lc-git/03-sharing/index.html) auf die jewilige Platform.
+  6. Abgabe des Links zum Repo per Mail an adrian.pohl\[at\]th-koeln.de.
+2. Herunterladen des Repos und lokale Bearbeitung. Dann Packen des `malis-it2.1a`-Ordners in ein zip-Archiv und Hochladen auf die Moodle-Plattform.
 
 ## Technische Voraussetzungen
 
