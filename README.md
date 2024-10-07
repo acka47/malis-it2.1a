@@ -25,9 +25,9 @@ Es gibt zwei Möglichkeiten der Abgabe:
 1. Anlegen eines Kontos bei [codeberg.org](https://codeberg.org), [gitlab.com](https://gitlab.com/) oder [github.com](https://gitlab.com/).
   1. Forken dieses git-Repositories, d.h. Kopieren in die eigene Repo-Liste auf der jeweiligen Plattform: [Codeberg](https://codeberg.org/acka47/malis-it2.1a/fork), [GitLab.com](https://gitlab.com/acka47/malis-it2.1a/-/forks/new), [Github](https://github.com/acka47/malis-it2.1a/fork).
   2. [git lokal einrichten](https://librarycarpentry.org/lc-git/02-getting-started.html)
-  3. `git clone` des geforkten Repos auf den lokalen Rechner.  oder direkt im geforkten git-Repo.
-  4. Aufgabe lokal bearbeiten
-  5. [`git push`](https://librarycarpentry.org/lc-git/03-sharing/index.html) auf die jewilige Platform.
+  3. `git clone` des geforkten Repos auf den lokalen Rechner.
+  4. Aufgabe lokal bearbeiten ()
+  5. [`git push`](https://librarycarpentry.org/lc-git/03-sharing/index.html) auf die jeweilige Platform.
   6. Abgabe des Links zum Repo per Mail an adrian.pohl\[at\]th-koeln.de.
 2. Herunterladen des Repos und lokale Bearbeitung. Dann Packen des `malis-it2.1a`-Ordners in ein zip-Archiv und Hochladen auf die Moodle-Plattform.
 
@@ -71,6 +71,13 @@ Die Änderungen an den einzelnen Schema-Dateien werden mit git commits getrackt,
 - `git commit -m "Ergänzung des "gender"-Schemas"`
 
 Siehe für eine git-Einführung auch [https://librarycarpentry.org/lc-git/01-what-is-git/index.html](https://librarycarpentry.org/lc-git/01-what-is-git/index.html).
+
+#### Einladung zum Üben guter, einheitlicher git-commit-Nachrichten
+
+Ich empfehle, bei dieser Aufgabe mit git zu arbeiten und die Vergabe sinnvoller und einheitlicher Commit-Nachrichten zu üben. Zur Orientierung, siehe dazu z.B. die folgenden beiden Texte:
+
+* https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+* https://cbea.ms/git-commit/
 
 ## Tipps für die Durchführung
 
@@ -117,7 +124,7 @@ examples/invalid/wrong-profession-id.json failed test
 
 Das Skript geht zunächst alle Dateien im `examples/valid`-Ordner durch und validiert diese gegen das Schema `schema.json`, das wiederum auf – aus Gründen der Übersichtlichkeit in eigenen Dateien abgelegte – Unterschemas für jedes einzelne Feld verweist: in `id.json` wird definiert, wie das Feld `id` validiert werden soll, in `gndIdentifier.json`, das Feld `gndIdentifier` usw.
 
-Da in diesen Schema-Dateien bisher keinerlei Bedingungen definiert sind, wird jede valide JSON-Datei den Test bestehen. Dementsprechend bestehen auch alle vier Dateien im `examples/valid`-Ordner die Tests.
+Da in diesen Schema-Dateien bisher keinerlei Bedingungen definiert sind, wird jede valide JSON-Datei den Test bestehen. Dementsprechend bestehen auch alle fünf Dateien im `examples/valid`-Ordner die Tests.
 
 Allerdings fallen alle Dateien im `examples/invalid`-Ordner anfangs durch den Test, weil dieser eben erwartet, dass die Dateien **nicht** Schema-konform sind.
 
@@ -146,10 +153,3 @@ Viel Erfolg!
 * Für manche Anpassungen muss eine *Regular Expression* geschrieben werden. Dafür gibt es auch hilfreiche Online-Tools, z.B.:
   * [RegExr](https://regexr.com/)
   * [RegEx101](https://regex101.com/)
-
-## Einladung zum Üben guter, einheitlicher git-commit-Nachrichten
-
-Ich empfehle, bei dieser Aufgabe mit git zu arbeiten und die Vergabe sinnvoller und einheitlicher Commit-Nachrichten zu üben. Zur Orientierung, siehe dazu z.B. die folgenden beiden Texte:
-
-* https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-* https://cbea.ms/git-commit/
