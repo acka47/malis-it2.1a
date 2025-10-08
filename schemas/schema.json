@@ -3,6 +3,7 @@
   "title": "Wurzelschema",
   "description": "Dies ist das Wurzelschema, das die Schemas für die einzlenen Felder referenziert.",
   "type": "object",
+  "required" : ["@context"],
   "properties": {
     "@context": {
       "$ref": "context-schema.json"
