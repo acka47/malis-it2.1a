@@ -5,6 +5,7 @@
   "description": "Das Schema für das professionOrOccupation-Feld",
   "type" : "array",
   "items": {
+    "type" : "object",
     "properties": {
       "id" : {
         "type" : "string",
