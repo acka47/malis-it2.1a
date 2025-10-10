@@ -2,5 +2,6 @@
   "$id": "gndIdentifier.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "GND Identifier",
-  "description": "Das Schema für das gndIdentifier-Feld"
-}
+  "description": "Das Schema für das gndIdentifier-Feld",
+      "type": "string"
+        }

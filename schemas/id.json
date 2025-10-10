@@ -2,5 +2,7 @@
   "$id": "id.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "URI",
-  "description": "Das Schema für das id-Feld, d.h. die URI der Ressource"
+  "description": "Das Schema für das id-Feld, d.h. die URI der Ressource", 
+  "type": "string",
+  "format": "uri"
 }
