@@ -3,14 +3,9 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Type",
   "description": "Das Schema für das type-Feld",
-  "type" : "array",
+  "type": "array",
   "items": {
     "type": "string"
   },
-  "default" : ["Person", "AuthorityResource"],
-  "allOf": [
-    { "contains": { "const": "Person" } },
-    { "contains": { "const": "AuthorityResource" } }
-  ]
-  }
-        
+  "contains": { "const": "AuthorityResource" }
+}
