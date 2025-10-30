@@ -4,12 +4,10 @@
   "title": "Type",
   "description": "Das Schema für das type-Feld",
   "type": "array",
-  "items": {  
+  "items": {
     "type": "string"
   },
-  "minItems": 1,
   "contains": {
-    "type": "string",
     "const": "AuthorityResource"
   }
 }
